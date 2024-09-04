@@ -1,0 +1,50 @@
+body,h1,h2,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+header{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    padding: 1rem;
+}
+main{
+    padding:2rem;
+}
+.profile{
+    display:flex;
+    align-items: center;
+}
+
+.photo{
+    padding: 0 2rem;
+    flex:1;
+}
+.photo img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+.bio{
+    flex:2;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: black;
+    color: aliceblue;
+
+}
+@media screen and (max-width: 768px){
+    .profile{
+        flex-direction: column;
+    }
+}
